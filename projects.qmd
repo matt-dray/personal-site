@@ -1,0 +1,47 @@
+---
+title: Projects
+---
+
+```{r}
+#| label: fn
+#| echo: false
+enlink_fa <- function(link, fa) {
+  if (link == "") return(" ")
+  paste0("[", fontawesome::fa(fa), "](", link, ")")
+}
+```
+
+## R Packages
+
+```{r}
+#| label: packages
+#| echo: false
+pkgs <- read.csv("resources/packages.csv")
+pkgs$Links <- paste(
+  lapply(pkgs$source_url, \(x) enlink_fa(x, "github")),
+  lapply(pkgs$blog_url,   \(x) enlink_fa(x, "pencil"))
+)
+pkgs$Name <- paste0("{", pkgs$Name, "}")
+pkgs[, c("Name", "Description", "Links")] |> knitr::kable()
+```
+
+## Shiny apps
+
+## Talks
+
+```{r}
+#| label: talks
+#| echo: false
+talks <- read.csv("resources/talks.csv")
+talks$Links <- paste(
+  lapply(talks$slides_url, \(x) enlink_fa(x, "film")),
+  lapply(talks$video_url,  \(x) enlink_fa(x, "video")),
+  lapply(talks$blog_url,   \(x) enlink_fa(x, "pencil")),
+  lapply(talks$source_url, \(x) enlink_fa(x, "github"))
+)
+talks[, c("Title", "Description", "Where", "When", "Links")] |> knitr::kable()
+```
+
+## Websites
+
+## Other

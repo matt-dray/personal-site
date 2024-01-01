@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  favicon: "resources/pfp-pixel.ico"
+  twitter-card: true
+  site-url: https://www.matt-dray.com
+  search: false
+  navbar:
+    left:
+      - href: https://www.matt-dray.com
+        text: Matt Dray
+      - href: bio.qmd
+        text: Bio
+      - href: projects.qmd
+        text: Projects
+      - href: https://www.rostrum.blog
+        text: Blog
+
+format:
+  html:
+    theme: simplex
+    css: styles.css
+    toc: false

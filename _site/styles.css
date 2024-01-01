@@ -1,0 +1,12 @@
+/* css styles */
+
+@font-face {
+    font-family: 'PixelOperator'; /* https://www.dafont.com/pixel-operator.font */
+    src: url('resources/PixelOperator.ttf') format("truetype");
+}
+
+* {
+  font-family: 'PixelOperator';
+  font-size: 1em;
+  font-weight: normal;
+}
