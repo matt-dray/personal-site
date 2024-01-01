@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.matt-dray.com/bio.html</loc>
-    <lastmod>2024-01-01T20:26:54.411Z</lastmod>
+    <loc>https://www.matt-dray.com/index.html</loc>
+    <lastmod>2024-01-01T20:35:10.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.matt-dray.com/LICENSE.html</loc>
+    <lastmod>2024-01-01T20:35:07.250Z</lastmod>
   </url>
   <url>
     <loc>https://www.matt-dray.com/projects.html</loc>
-    <lastmod>2024-01-01T20:26:53.970Z</lastmod>
+    <lastmod>2024-01-01T20:35:10.083Z</lastmod>
   </url>
 </urlset>

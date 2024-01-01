@@ -10,7 +10,7 @@ website:
     left:
       - href: https://www.matt-dray.com
         text: Matt Dray
-      - href: bio.qmd
+      - href: index.qmd
         text: Bio
       - href: projects.qmd
         text: Projects
