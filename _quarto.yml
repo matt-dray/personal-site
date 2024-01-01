@@ -2,9 +2,10 @@ project:
   type: website
 
 website:
+  description: Matt Dray's personal website
   favicon: "resources/pfp-pixel.ico"
-  twitter-card: true
   site-url: https://www.matt-dray.com
+  twitter-card: true
   search: false
   navbar:
     left:
@@ -15,7 +16,11 @@ website:
       - href: projects.qmd
         text: Projects
       - href: https://www.rostrum.blog
-        text: Blog
+        text: Blog >
+      - href: https://github.com/matt-dray/
+        text: GitHub >
+      - href: https://fosstodon.org/@mattdray
+        text: Mastodon >
 
 format:
   html:
