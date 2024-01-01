@@ -33,7 +33,7 @@ talks[, c("Title", "Description", "Where", "When", "Links")] |> knitr::kable()
 
 ## R Packages
 
-All are hosted on GitHub; none are on CRAN. The majority are concepts with no guarantees.
+Selected packages. All are hosted on GitHub. The majority are concepts with no guarantees.
 
 ```{r}
 #| label: packages
@@ -53,38 +53,220 @@ pkgs[, c("Name", "Description", "Links")] |> knitr::kable()
 #| label: websites
 #| echo: false
 tibble::tribble(
-  ~Name, ~What, ~Tools, ~Links,
+  ~Name, ~Description, ~Tools, ~Links,
   # 
   "matt-dray.com", 
   "This website",
   "Quarto, Netlify",
-  paste0(
-    "[",  fontawesome::fa("globe"), "](https://www.matt-dray.com/) ",
-    "[",  fontawesome::fa("github"), "](https://www.github.com/matt-dray/personal-site/) ",
-    "[",  fontawesome::fa("pencil"), "](https://www.rostrum.blog/posts/2020-12-08-postcard/)"
+  paste(
+    enlink_fa("https://www.matt-dray.com/", "globe"),
+    enlink_fa("https://www.github.com/matt-dray/personal-site/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2020-12-08-postcard/", "pencil")
   ),
   #
   "rostrum.blog", 
   "Japes with R: tutorials, ephemera, memes",
   "Quarto, Netlify",
-  paste0(
-    "[",  fontawesome::fa("globe"), "](https://www.rostrum.blog/) ",
-    "[",  fontawesome::fa("github"), "](https://www.github.com/matt-dray/rostrum-blog-2/) ",
-    "[",  fontawesome::fa("pencil"), "](https://www.rostrum.blog/posts/2023-08-26-cheerio-blogdown/)"
+  paste(
+    enlink_fa("https://www.rostrum.blog/", "globe"),
+    enlink_fa("https://www.github.com/matt-dray/rostrum-blog-2/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2023-08-26-cheerio-blogdown/", "pencil")
   ),
   #
   "faxcrayon.art", 
   "This website",
   "RMarkdown, {bs4cards}, GitHub Pages",
-  paste0(
-    "[",  fontawesome::fa("globe"), "](https://www.faxcrayon.art/) ",
-    "[",  fontawesome::fa("github"), "](https://www.github.com/matt-dray/faxcrayon/) ",
-    "[",  fontawesome::fa("pencil"), "](https://www.rostrum.blog/posts/2021-07-25-faxcrayon/)"
+  paste(
+    enlink_fa("https://www.faxcrayon.art/", "globe"),
+    enlink_fa("https://www.github.com/matt-dray/faxcrayon/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2021-07-25-faxcrayon/", "pencil")
   ),
+  #
+  "Hastings Half maps", 
+  "Interactive maps of the Hastings Half-Marathon route",
+  "RMarkdown, GitHub Pages",
+  paste(
+    enlink_fa("https://matt-dray.github.io/hastings-half/", "globe"),
+    enlink_fa("https://github.com/matt-dray/hastings-half/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2022-03-31-hastings-half/", "pencil")
+  )
 ) |> 
   knitr::kable()
 ```
 
 ## Shiny apps
 
+<img src='https://img.shields.io/badge/Shiny-shinyapps.io-blue?style=flat&labelColor=white&logo=RStudio&logoColor=blue'>
+
+```{r}
+#| label: shiny-shinyapps
+#| echo: false
+tibble::tribble(
+  ~Name, ~Description, ~Links,
+  # 
+  "Animal Crossing Popularity Contest", 
+  "Swipe left or right on villagers from Nintendo’s Animal Crossing",
+  paste(
+    enlink_fa("https://mattdray.shinyapps.io/acnh-swipe/", "globe"),
+    enlink_fa("https://github.com/matt-dray/acnh-swipe", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2022-01-07-acnh-swipe-results/", "pencil")
+  ),
+  # 
+  "LeWitt ReMix", 
+  "Remix Sol LeWitt's art for #RecreationThursday",
+  paste(
+    enlink_fa("https://mattdray.shinyapps.io/lewitt-remix-app/", "globe"),
+    enlink_fa("https://github.com/matt-dray/viz-recreation/tree/main/2021-07-01_rt_lewitt/lewitt-remix-app/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2021-07-05-recreate-lewitt/", "pencil")
+  ),
+  # 
+  "Randoflag", 
+  "A randomised flag challenge for new browser tabs",
+  paste(
+    enlink_fa("https://mattdray.shinyapps.io/randoflag/", "globe"),
+    enlink_fa("https://github.com/matt-dray/randoflag/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2021-03-02-randoflag/", "pencil")
+  ),
+  # 
+  "Tidyquiz", 
+  "A {learnr} hack to generate a random {tidyverse} functions quiz",
+  paste(
+    enlink_fa("https://mattdray.shinyapps.io/tidyquiz/", "globe"),
+    enlink_fa("https://github.com/matt-dray/tidyquiz/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2019-03-18-tidyverse-quiz/", "pencil")
+  ),
+  #
+  "What’s your Hadley number?", 
+  "Find shortest paths to Hadley Wickham in the CRAN authorship graph",
+  paste(
+    enlink_fa("https://mattdray.shinyapps.io/hadley-number/", "globe"),
+    enlink_fa("https://github.com/matt-dray/hadley-number/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2019-02-27-hadley-number/", "pencil")
+  )
+) |> 
+  knitr::kable()
+```
+
+<img src='https://img.shields.io/badge/Shiny-Shinylive-blue?style=flat&labelColor=white&logo=RStudio&logoColor=blue'>
+
+```{r}
+#| label: shiny-shinylive
+#| echo: false
+tibble::tribble(
+  ~Name, ~Description, ~Links,
+  # 
+  "Govspeakify tables", 
+  "Convert a pasted table to Govspeak-flavoured Markdown",
+  paste(
+    enlink_fa("https://matt-dray.github.io/govspeakify-tables/", "globe"),
+    enlink_fa("https://github.com/matt-dray/govspeakify-tables/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2023-10-08-govspeakify-tables/", "pencil")
+  )
+) |> 
+  knitr::kable()
+```
+
+<img src='https://img.shields.io/badge/Shiny-not_hosted-blue?style=flat&labelColor=white&logo=RStudio&logoColor=blue'>
+
+```{r}
+#| label: shiny-not-hosted
+#| echo: false
+tibble::tribble(
+  ~Name, ~Description, ~Links,
+  # 
+  "Deer-vehicle collisions in Scotland", 
+  "Explore open data on deer strikes in Scotland, 2000 to 2017",
+  paste(
+    enlink_fa("https://github.com/matt-dray/scot-deer-collisions/", "github"),
+    enlink_fa("https://www.rostrum.blog/2019/01/18/deer-collisions/", "pencil")
+  ),
+  # 
+  "Ages at World Cup 2018", 
+  "Discover How many footballers at World Cup 2018 were younger than you",
+  paste(
+    enlink_fa("https://github.com/matt-dray/wc18-age/", "github"),
+    enlink_fa("https://www.rostrum.blog/2018/07/17/world-cup-age-app/", "pencil")
+  ),
+  # 
+  "Mission Across IOW", 
+  "Investigate routes to cross the Isle of Wight in a straight line",
+  paste(
+    enlink_fa("https://github.com/matt-dray/mission-across-iow/", "github"),
+    enlink_fa("https://www.rostrum.blog/2021/05/22/mission-across-iow/", "pencil")
+  ),
+  # 
+  "Read a colour hex code", 
+  "Learn how to interpret the colour encoded in a hex code with {dehex}",
+  paste(
+    enlink_fa("https://github.com/matt-dray/dehex-challenge/", "github"),
+    enlink_fa("https://www.rostrum.blog/2021/08/10/dehex/", "pencil")
+  )
+) |> 
+  knitr::kable()
+```
+
 ## Other
+
+Bric-a-brac. Alphabetical.
+
+```{r}
+#| label: other
+#| echo: false
+tibble::tribble(
+  ~Name, ~Description, ~Links,
+  # 
+  "Emojis to SVG", 
+  "Script to fetch SoftBank’s 1997 emoji set (the first-ever?) and convert them to SVG format",
+  paste(
+    enlink_fa("https://github.com/matt-dray/og-emoji-svg/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2021-07-31-og-emoji-svg/", "pencil")
+  ),
+  # 
+  "gamelad", 
+  "An RStudio theme to mimic the original GameBoy’s green palette",
+  paste(
+    enlink_fa("https://github.com/matt-dray/gamelad/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2021-01-04-safar6/", "pencil")
+  ),
+  # 
+  "GitHub Gists", 
+  "Snippets of code that solve a small problem and sometimes become blog posts",
+  enlink_fa("https://gist.github.com/matt-dray/", "github"),
+  # 
+  "Hex stickers", 
+  "Hexagonal sticker designs, mostly for R packages",
+  enlink_fa("https://github.com/matt-dray/stickers/", "github"),
+  # 
+  "londonmapbot", 
+  "A social media bot that posts MapBox satellite images, made with {rtoot} and GitHub Actions",
+  paste(
+    enlink_fa("https://botsin.space/@londonmapbot", "mastodon"),
+    enlink_fa("https://twitter.com/londonmapbot", "twitter"),
+    enlink_fa("https://github.com/matt-dray/londonmapbot/", "github"),
+    enlink_fa("https://www.rostrum.blog/index.html#category=londonmapbot/", "pencil")
+  ),
+  # 
+  "Splendid R games", 
+  "A list of games made with R",
+  paste(
+    enlink_fa("https://github.com/matt-dray/splendid-r-games/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2023-04-02-splendid-r-games/", "pencil")
+  ),
+  # 
+  "Tidyswirl", 
+  "A work-in-progress introduction to the tidyverse created with {swirl}",
+  paste(
+    enlink_fa("https://github.com/matt-dray/tidyswirl/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2019-11-02-tidyswirl/", "pencil")
+  ),
+  # 
+  "Try R v4.2", 
+  "Try new features of R version 4.2 in the browser, thanks to Binder",
+  paste(
+    enlink_fa("https://mybinder.org/v2/gh/matt-dray/try-Rv4.2/main?urlpath=rstudio/", "globe"),
+    enlink_fa("https://github.com/matt-dray/try-Rv4.2/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2022-06-01-try-r/", "pencil")
+  ),
+) |> 
+  knitr::kable()
+```
