@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  title: Matt Dray
   description: Matt Dray's personal website
   favicon: "resources/pfp-pixel.ico"
   site-url: https://www.matt-dray.com
@@ -9,18 +10,16 @@ website:
   search: false
   navbar:
     left:
-      - href: https://www.matt-dray.com
-        text: Matt Dray
-      - href: index.qmd
-        text: Bio
-      - href: projects.qmd
-        text: Projects
-      - href: https://www.rostrum.blog
-        text: Blog >
-      - href: https://github.com/matt-dray/
-        text: GitHub >
-      - href: https://fosstodon.org/@mattdray
-        text: Mastodon >
+      - text: Bio
+        href: index.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Blog >
+        href: https://www.rostrum.blog
+      - text: GitHub >
+        href: https://github.com/matt-dray/
+      - text: Mastodon >
+        href: https://fosstodon.org/@mattdray
 
 format:
   html:
