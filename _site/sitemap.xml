@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.matt-dray.com/index.html</loc>
-    <lastmod>2024-01-02T00:14:10.356Z</lastmod>
+    <lastmod>2024-01-02T16:03:14.293Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.matt-dray.com/talks.html</loc>
+    <lastmod>2024-01-02T16:03:11.333Z</lastmod>
   </url>
   <url>
     <loc>https://www.matt-dray.com/LICENSE.html</loc>
-    <lastmod>2024-01-02T00:14:05.467Z</lastmod>
+    <lastmod>2024-01-02T16:03:09.836Z</lastmod>
   </url>
   <url>
     <loc>https://www.matt-dray.com/projects.html</loc>
-    <lastmod>2024-01-02T00:14:09.999Z</lastmod>
+    <lastmod>2024-01-02T16:03:13.991Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,26 @@
+---
+title: Talks
+---
+
+Selected presentations. Made with Quarto or {xaringan}.
+
+```{r}
+#| label: talks
+#| echo: false
+
+enlink_fa <- function(link, fa) {
+  if (link == "") return(" ")
+  paste0("[", fontawesome::fa(fa), "](", link, ")")
+}
+
+talks <- read.csv("resources/talks.csv")
+
+talks$Links <- paste(
+  lapply(talks$slides_url, \(x) enlink_fa(x, "film")),
+  lapply(talks$video_url,  \(x) enlink_fa(x, "video")),
+  lapply(talks$blog_url,   \(x) enlink_fa(x, "pencil")),
+  lapply(talks$source_url, \(x) enlink_fa(x, "github"))
+)
+
+talks[, c("Title", "Description", "Where", "When", "Links")] |> knitr::kable()
+```

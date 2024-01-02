@@ -14,84 +14,46 @@ enlink_fa <- function(link, fa) {
 }
 ```
 
-## Talks
-
-Selected presentations. Made with Quarto or {xaringan}.
-
-```{r}
-#| label: talks
-#| echo: false
-talks <- read.csv("resources/talks.csv")
-talks$Links <- paste(
-  lapply(talks$slides_url, \(x) enlink_fa(x, "film")),
-  lapply(talks$video_url,  \(x) enlink_fa(x, "video")),
-  lapply(talks$blog_url,   \(x) enlink_fa(x, "pencil")),
-  lapply(talks$source_url, \(x) enlink_fa(x, "github"))
-)
-talks[, c("Title", "Description", "Where", "When", "Links")] |> knitr::kable()
-```
-
 ## R Packages
 
-Selected packages. All are hosted on GitHub. The majority are concepts with no guarantees.
+Selected packages. All are hosted on GitHub. No guarantees.
+
+### Useful
+
+Made to serve a 'real' purpose. Alphabetical.
 
 ```{r}
-#| label: packages
+#| label: packages-useful
 #| echo: false
+
 pkgs <- read.csv("resources/packages.csv")
+
 pkgs$Links <- paste(
   lapply(pkgs$source_url, \(x) enlink_fa(x, "github")),
   lapply(pkgs$blog_url,   \(x) enlink_fa(x, "pencil"))
 )
+
 pkgs$Name <- paste0("{", pkgs$Name, "}")
-pkgs[, c("Name", "Description", "Links")] |> knitr::kable()
+
+pkgs[
+  pkgs$category == "Useful",
+  c("Name", "Description", "Links")
+] |> 
+  knitr::kable(row.names = FALSE)
 ```
 
-## Websites
+### Conceptual
+
+Experiments, hacks, memes and subversion. Alphabetical.
 
 ```{r}
-#| label: websites
+#| label: packages-concept
 #| echo: false
-tibble::tribble(
-  ~Name, ~Description, ~Tools, ~Links,
-  # 
-  "matt-dray.com", 
-  "This website",
-  "Quarto, Netlify",
-  paste(
-    enlink_fa("https://www.matt-dray.com/", "globe"),
-    enlink_fa("https://www.github.com/matt-dray/personal-site/", "github"),
-    enlink_fa("https://www.rostrum.blog/posts/2020-12-08-postcard/", "pencil")
-  ),
-  #
-  "rostrum.blog", 
-  "Japes with R: tutorials, ephemera, memes",
-  "Quarto, Netlify",
-  paste(
-    enlink_fa("https://www.rostrum.blog/", "globe"),
-    enlink_fa("https://www.github.com/matt-dray/rostrum-blog-2/", "github"),
-    enlink_fa("https://www.rostrum.blog/posts/2023-08-26-cheerio-blogdown/", "pencil")
-  ),
-  #
-  "faxcrayon.art", 
-  "This website",
-  "RMarkdown, {bs4cards}, GitHub Pages",
-  paste(
-    enlink_fa("https://www.faxcrayon.art/", "globe"),
-    enlink_fa("https://www.github.com/matt-dray/faxcrayon/", "github"),
-    enlink_fa("https://www.rostrum.blog/posts/2021-07-25-faxcrayon/", "pencil")
-  ),
-  #
-  "Hastings Half maps", 
-  "Interactive maps of the Hastings Half-Marathon route",
-  "RMarkdown, GitHub Pages",
-  paste(
-    enlink_fa("https://matt-dray.github.io/hastings-half/", "globe"),
-    enlink_fa("https://github.com/matt-dray/hastings-half/", "github"),
-    enlink_fa("https://www.rostrum.blog/posts/2022-03-31-hastings-half/", "pencil")
-  )
-) |> 
-  knitr::kable()
+pkgs[
+  pkgs$category == "Concept",
+  c("Name", "Description", "Links")
+] |> 
+  knitr::kable(row.names = FALSE)
 ```
 
 ## Shiny apps
@@ -182,21 +144,21 @@ tibble::tribble(
   ),
   # 
   "Ages at World Cup 2018", 
-  "Discover How many footballers at World Cup 2018 were younger than you",
+  "You're really old and sports people are younger than you",
   paste(
     enlink_fa("https://github.com/matt-dray/wc18-age/", "github"),
     enlink_fa("https://www.rostrum.blog/2018/07/17/world-cup-age-app/", "pencil")
   ),
   # 
   "Mission Across IOW", 
-  "Investigate routes to cross the Isle of Wight in a straight line",
+  "How hard is it to cross the Isle of Wight, UK, in a straight line?",
   paste(
     enlink_fa("https://github.com/matt-dray/mission-across-iow/", "github"),
     enlink_fa("https://www.rostrum.blog/2021/05/22/mission-across-iow/", "pencil")
   ),
   # 
   "Read a colour hex code", 
-  "Learn how to interpret the colour encoded in a hex code with {dehex}",
+  "Test yourself at reading colour hex codes by eye ",
   paste(
     enlink_fa("https://github.com/matt-dray/dehex-challenge/", "github"),
     enlink_fa("https://www.rostrum.blog/2021/08/10/dehex/", "pencil")
@@ -205,9 +167,56 @@ tibble::tribble(
   knitr::kable()
 ```
 
+## Websites
+
+```{r}
+#| label: websites
+#| echo: false
+tibble::tribble(
+  ~Name, ~Description, ~Tools, ~Links,
+  # 
+  "matt-dray.com", 
+  "This website",
+  "Quarto, Netlify",
+  paste(
+    enlink_fa("https://www.matt-dray.com/", "globe"),
+    enlink_fa("https://www.github.com/matt-dray/personal-site/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2020-12-08-postcard/", "pencil")
+  ),
+  #
+  "rostrum.blog", 
+  "Japes with R: tutorials, ephemera, memes",
+  "Quarto, Netlify",
+  paste(
+    enlink_fa("https://www.rostrum.blog/", "globe"),
+    enlink_fa("https://www.github.com/matt-dray/rostrum-blog-2/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2023-08-26-cheerio-blogdown/", "pencil")
+  ),
+  #
+  "faxcrayon.art", 
+  "A gallery of recreations/remixes/original art",
+  "RMarkdown, {bs4cards}, GitHub Pages",
+  paste(
+    enlink_fa("https://www.faxcrayon.art/", "globe"),
+    enlink_fa("https://www.github.com/matt-dray/faxcrayon/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2021-07-25-faxcrayon/", "pencil")
+  ),
+  #
+  "Hastings Half maps", 
+  "Interactive maps of the Hastings Half-Marathon route",
+  "RMarkdown, {flexdashboard}, GitHub Pages",
+  paste(
+    enlink_fa("https://matt-dray.github.io/hastings-half/", "globe"),
+    enlink_fa("https://github.com/matt-dray/hastings-half/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2022-03-31-hastings-half/", "pencil")
+  )
+) |> 
+  knitr::kable()
+```
+
 ## Other
 
-Bric-a-brac. Alphabetical.
+Code-based bric-a-brac. Alphabetical.
 
 ```{r}
 #| label: other
