@@ -1,0 +1,19 @@
+---
+title: Site details
+---
+
+Tools:
+
+* Source: [Github](https://github.com/matt-dray/personal-site)
+* Framework: [Quarto](https://quarto.org/)
+* Deployment: [Netlify](https://www.netlify.com/)
+* Icons: [Font Awesome](https://fontawesome.com/)
+* Font: [Pixel Operator](https://www.dafont.com/pixel-operator.font)
+
+Warning:
+
+* This place is not a place of honor
+* No highly esteemed deed is commemorated here
+* Nothing valued is here
+
+This site—and the content of my linked sites—represent me and my thoughts and not any of my employers, past nor present.

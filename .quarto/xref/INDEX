@@ -22,5 +22,8 @@
   },
   "talks.qmd": {
     "talks.html": "389c1c92"
+  },
+  "site-details.qmd": {
+    "site-details.html": "f0f248bd"
   }
 }

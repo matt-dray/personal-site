@@ -4,8 +4,6 @@ title: Bio
 
 ![](resources/pfp.jpg){fig-alt="Profile picture of a 30-something white male smiling coyly to stage-right." width="50%"}
 
-Data-botherer, UK public sector.
-
-Biology PhD, MSc, BSc.
-
-R blogger.
+* Data-botherer, UK public sector
+* Biology PhD, MSc, BSc
+* R blogger
