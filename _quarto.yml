@@ -14,7 +14,7 @@ website:
       - text: Bio
         href: index.qmd
       - href: projects.qmd
-      - href: talks.qmd
+      - href: talking.qmd
       - text: "Blog >"
         href: https://www.rostrum.blog
       - text: "GitHub >"

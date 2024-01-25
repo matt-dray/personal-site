@@ -26,7 +26,7 @@ pixeltrix,Useful,"Make pixel art interactively in a plot window, get a matrix, m
 plunderplot,Concept,Interactively extract coordinates from an image of a plot ,https://github.com/matt-dray/plunderplot,,,
 potato,Concept,"Play 'Potato' in the R console, a one-page RPG by Oliver Darkshire",https://github.com/matt-dray/potato,,https://www.rostrum.blog/posts/2022-09-13-potato/,
 quartostamp,Useful,RStudio Addin to insert ('stamp') useful Quarto elements,https://github.com/matt-dray/quartostamp,https://matt-dray.github.io/quartostamp,https://www.rostrum.blog/index.html#category=quartostamp,
-r2eng,Concept,Translate R to English,https://github.com/matt-dray/r2eng,https://matt-dray.github.io/r2eng/,https://www.rostrum.blog/posts/2020-11-14-hello-r2eng/,
+r2eng,Useful,Translate R to English,https://github.com/matt-dray/r2eng,https://matt-dray.github.io/r2eng/,https://www.rostrum.blog/posts/2020-11-14-hello-r2eng/,
 r.oguelike,Concept,"A tile-based roguelike toy for R's console, featuring procedural dungeons and enemy pathfinding",https://github.com/matt-dray/r.oguelike,https://www.rostrum.blog/tags/r.oguelike/,https://www.rostrum.blog/index.html#category=r.oguelike,
 remorse,Concept,Text to Morse Code to audio,https://github.com/matt-dray/remorse,,https://www.rostrum.blog/posts/2023-01-06-remorse/,
 safar6,Concept,A playable text-based simulation of Pokémon's Safari Zone using {R6},https://github.com/matt-dray/safar6,,https://www.rostrum.blog/posts/2021-01-04-safar6/,

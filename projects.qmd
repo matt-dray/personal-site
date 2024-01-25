@@ -16,7 +16,7 @@ enlink_fa <- function(link, fa) {
 
 ## R Packages
 
-Selected packages. All are hosted on GitHub. No guarantees.
+Selected packages. All are hosted on GitHub. Many are [on my R-universe](https://matt-dray.r-universe.dev/). No guarantees.
 
 ### Useful
 
@@ -57,6 +57,8 @@ pkgs[
 ```
 
 ## Shiny apps
+
+### Hosted 
 
 <img src='https://img.shields.io/badge/Shiny-shinyapps.io-blue?style=flat&labelColor=white&logo=RStudio&logoColor=blue'>
 
@@ -109,7 +111,11 @@ tibble::tribble(
   knitr::kable()
 ```
 
+### Shinylive
+
 <img src='https://img.shields.io/badge/Shiny-Shinylive-blue?style=flat&labelColor=white&logo=RStudio&logoColor=blue'>
+
+Not hosted on server. Run entirely in your browser.
 
 ```{r}
 #| label: shiny-shinylive
@@ -128,7 +134,11 @@ tibble::tribble(
   knitr::kable()
 ```
 
+### Not hosted
+
 <img src='https://img.shields.io/badge/Shiny-not_hosted-blue?style=flat&labelColor=white&logo=RStudio&logoColor=blue'>
+
+You'll have to download and run them yourself.
 
 ```{r}
 #| label: shiny-not-hosted

@@ -1,8 +1,8 @@
 ---
-title: Talks
+title: Talking
 ---
 
-Selected presentations. Made with Quarto or {xaringan}.
+Selected appearances. Presentations made with Quarto or {xaringan}.
 
 ```{r}
 #| label: talks
@@ -18,6 +18,7 @@ talks <- read.csv("resources/talks.csv")
 talks$Links <- paste(
   lapply(talks$slides_url, \(x) enlink_fa(x, "film")),
   lapply(talks$video_url,  \(x) enlink_fa(x, "video")),
+  lapply(talks$audio_url,  \(x) enlink_fa(x, "microphone")),
   lapply(talks$blog_url,   \(x) enlink_fa(x, "pencil")),
   lapply(talks$source_url, \(x) enlink_fa(x, "github"))
 )
