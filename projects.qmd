@@ -14,7 +14,7 @@ enlink_fa <- function(link, fa) {
 }
 ```
 
-Almost everything listed on this page was built for the sake of my own learning. Quality is variable. No guarantees.
+Almost everything listed on this page was built for the sake of my own learning. Quality and completeness are variable. No guarantees.
 
 ## R Packages
 
@@ -46,7 +46,7 @@ pkgs[
 
 ### Conceptual
 
-Experiments, hacks, memes and subversion. Alphabetical.
+Experiments, games, hacks, memes and subversion. Alphabetical.
 
 ```{r}
 #| label: packages-concept
@@ -109,14 +109,14 @@ tibble::tribble(
 
 <img src='https://img.shields.io/badge/Shiny-shinylive-447099?style=flat&labelColor=white&logo=Posit&logoColor=447099'>
 
-Not hosted on server. Run entirely in your browser.
+Serverless. Runs entirely in your browser.
 
 ```{r}
 #| label: shiny-shinylive
 #| echo: false
 tibble::tribble(
   ~Name, ~Description, ~Links,
-    # 
+  # 
   "CRAN deadlines", 
   "See which CRAN packages are at threat of archival",
   paste(
@@ -131,6 +131,14 @@ tibble::tribble(
     enlink_fa("https://matt-dray.github.io/govspeakify-tables/", "globe"),
     enlink_fa("https://github.com/matt-dray/govspeakify-tables/", "github"),
     enlink_fa("https://www.rostrum.blog/posts/2023-10-08-govspeakify-tables/", "pencil")
+  ),
+  #
+  "Little pixel fun zone", 
+  "A small interactive pixel-editor toy for the browser",
+  paste(
+    enlink_fa("https://matt-dray.github.io/little-pixel-fun-zone/", "globe"),
+    enlink_fa("https://github.com/matt-dray/little-pixel-fun-zone/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2024-09-15-shiny-pixel/", "pencil")
   )
 ) |> 
   knitr::kable()
@@ -175,11 +183,10 @@ tibble::tribble(
     enlink_fa("https://github.com/matt-dray/dehex-challenge/", "github"),
     enlink_fa("https://www.rostrum.blog/2021/08/10/dehex/", "pencil")
   ),
-    # 
+  # 
   "Tidyquiz", 
   "A {learnr} hack to generate a random {tidyverse} functions quiz",
   paste(
-    enlink_fa("https://mattdray.shinyapps.io/tidyquiz/", "globe"),
     enlink_fa("https://github.com/matt-dray/tidyquiz/", "github"),
     enlink_fa("https://www.rostrum.blog/posts/2019-03-18-tidyverse-quiz/", "pencil")
   ),
