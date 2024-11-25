@@ -23,5 +23,6 @@ talks$Links <- paste(
   lapply(talks$source_url, \(x) enlink_fa(x, "github"))
 )
 
-talks[, c("Title", "Where", "When", "Links")] |> knitr::kable()
+talks[, c("Title", "Where", "When", "Description", "Links")] |> 
+  knitr::kable()
 ```

@@ -139,7 +139,15 @@ tibble::tribble(
     enlink_fa("https://matt-dray.github.io/little-pixel-fun-zone/", "globe"),
     enlink_fa("https://github.com/matt-dray/little-pixel-fun-zone/", "github"),
     enlink_fa("https://www.rostrum.blog/posts/2024-09-15-shiny-pixel/", "pencil")
-  )
+  ),
+  # 
+  "Not Balatro", 
+  "Drag-and-drop card gaming in R with {sortable}?",
+  paste(
+    enlink_fa("https://matt-dray.github.io/not-balatro/", "globe"),
+    enlink_fa("https://github.com/matt-dray/not-balatro/", "github"),
+    enlink_fa("https://www.rostrum.blog/posts/2024-10-25-not-balatro/", "pencil")
+  ),
 ) |> 
   knitr::kable()
 ```

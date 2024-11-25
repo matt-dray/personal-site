@@ -8,7 +8,7 @@ Tools:
 * Framework: [Quarto](https://quarto.org/)
 * Deployment: [Netlify](https://www.netlify.com/)
 * Icons: [Font Awesome](https://fontawesome.com/)
-* Font: [Pixel Operator](https://www.dafont.com/pixel-operator.font)
+* Font: [Victor Mono](https://rubjo.github.io/victor-mono/)
 
 Warning:
 

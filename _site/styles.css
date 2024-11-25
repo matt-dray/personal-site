@@ -1,12 +1,27 @@
-/* css styles */
+@font-face {
+  font-family: 'VictorMono-Italic';
+  src: url('resources/VictorMono-Italic.ttf') format("truetype");
+}
 
 @font-face {
-    font-family: 'PixelOperator'; /* https://www.dafont.com/pixel-operator.font */
-    src: url('resources/PixelOperator.ttf') format("truetype");
+  font-family: 'VictorMono-Regular';
+  src: url('resources/VictorMono-Regular.ttf') format("truetype");
 }
 
 * {
-  font-family: 'PixelOperator';
-  font-weight: normal;
-  font-size: large;
+  font-family: 'VictorMono-Regular';
+}
+
+h1, h2, h3, h4, h5, th {
+  font-family: 'VictorMono-Italic';
+  color: red;
+}
+
+.menu-text {
+  font-family: 'VictorMono-Italic';
+  color: red;
+}
+
+.nav-link {
+  font-family: 'VictorMono-Italic';
 }
