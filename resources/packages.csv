@@ -1,5 +1,5 @@
 Name,category,Description,source_url,site_url,blog_url,hex_url
-a11ytables,Useful,Generate best-practice stats spreadsheets for publication,https://github.com/co-analysis/a11ytables,https://co-analysis.github.io/a11ytables/,https://www.rostrum.blog/#category=a11ytables,
+a11ytables,Useful,Generate best-practice stats spreadsheets for publication,https://github.com/best-practice-and-impact/a11ytables,,https://www.rostrum.blog/#category=a11ytables,
 ActionSquirrel,Concept,A squirrel game in your R console made with {R6},https://github.com/matt-dray/ActionSquirrel,,https://www.rostrum.blog/posts/2021-10-03-squirrel/,
 altcheckr,Useful,Assess image alternative (alt) text on websites,https://github.com/matt-dray/altcheckr,https://matt-dray.github.io/altcheckr/,https://www.rostrum.blog/posts/2019-12-08-altcheckr/,
 backtick,Useful,Insert backtick structures with an RStudio Addin,https://github.com/matt-dray/backtick,,https://www.rostrum.blog/posts/2022-02-19-backtick/,
@@ -16,6 +16,7 @@ emojiscape,Concept,Print a little emoji scene to your console,https://github.com
 gdstheme,Useful,"{xaringan} theme and template, (unofficial) Government Digital Service style",https://github.com/matt-dray/gdstheme,https://matt-dray.github.io/gdstheme/,https://www.rostrum.blog/posts/2019-05-24-xaringan-template/,
 ghdump,Useful,Download/clone all of a user's GitHub repositories for archiving purposes,https://github.com/matt-dray/ghdump,,https://www.rostrum.blog/posts/2020-06-14-ghdump/,
 gpx3d,Useful,Make an interactive 3D chart of your workout route from a GPX file,https://github.com/matt-dray/gpx3d,https://matt-dray.github.io/gpx3d/,https://www.rostrum.blog/index.html#category=gpx3d,
+hexbase,Useful,Make a very simple hex logo with no dependencies,https://github.com/matt-dray/hexbase,,https://www.rostrum.blog/index.html#category=hexbase,
 hokey,Concept,Tiny game demos with user input via {keypress},https://github.com/matt-dray/hokey,,https://www.rostrum.blog/posts/2022-01-19-keypress/,
 hiscore,Concept,A game with a system for saving high scores persistently,https://github.com/matt-dray/hiscore,,https://www.rostrum.blog/posts/2023-07-15-hiscore/,
 kevinbacran,Concept,The Six Degrees of Kevin Bacon but for CRAN authors,https://github.com/matt-dray/kevinbacran,https://matt-dray.github.io/kevinbacran/,https://www.rostrum.blog/posts/2019-02-27-hadley-number/,
@@ -38,4 +39,4 @@ tamRgo,Concept,A persistent cyberpet in your R console,https://github.com/matt-d
 tidyquiz,Concept,A {tidyverse} quiz via {learnr} hacking,https://github.com/matt-dray/tidyquiz,,https://www.rostrum.blog/posts/2019-03-18-tidyverse-quiz/,
 tilebased,Concept,Move a sprite around a procedurally-generated map inside an R graphics window,https://github.com/matt-dray/tilebased,,https://www.rostrum.blog/posts/2024-07-14-tilebased/,
 trapinch,Useful,Get data from the PokéAPI service,https://github.com/matt-dray/trapinch,,https://www.rostrum.blog/posts/2023-02-02-trapinch/,
-wordup,Useful,Word to Govspeak,https://github.com/matt-dray/wordup,,https://www.rostrum.blog/index.html#category=wordup,
+wordup,Useful,Convert Word tables to Govspeak Markdown,https://github.com/matt-dray/wordup,,https://www.rostrum.blog/index.html#category=wordup,
