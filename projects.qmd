@@ -22,7 +22,7 @@ Selected packages. All are hosted on GitHub. Many are [on my R-universe](https:/
 
 ### Useful
 
-Made to serve a 'real' purpose. Alphabetical.
+Made to serve a 'real' purpose. Other people could feasibly find them useful. Nothing grandiose. Alphabetical.
 
 ```{r}
 #| label: packages-useful
@@ -282,7 +282,7 @@ tibble::tribble(
   enlink_fa("https://github.com/matt-dray/stickers/", "github"),
   # 
   "londonmapbot", 
-  "A social media bot that posts MapBox satellite images, made with {rtoot} and GitHub Actions",
+  "A (retired) social media bot that posts MapBox satellite images, made with {rtoot} and GitHub Actions",
   paste(
     enlink_fa("https://botsin.space/@londonmapbot", "mastodon"),
     enlink_fa("https://twitter.com/londonmapbot", "twitter"),
