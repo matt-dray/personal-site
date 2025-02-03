@@ -62,7 +62,7 @@ pkgs[
 
 ### Hosted 
 
-<img src='https://img.shields.io/badge/Shiny-shinyapps.io-447099?style=flat&labelColor=white&logo=Posit&logoColor=447099'>
+<img src='https://img.shields.io/badge/Shiny-shinyapps.io-teal?style=flat&labelColor=white&logo=Posit&logoColor=teal'>
 
 ```{r}
 #| label: shiny-shinyapps
@@ -107,7 +107,7 @@ tibble::tribble(
 
 ### Shinylive
 
-<img src='https://img.shields.io/badge/Shiny-shinylive-447099?style=flat&labelColor=white&logo=Posit&logoColor=447099'>
+<img src='https://img.shields.io/badge/Shiny-shinylive-teal?style=flat&labelColor=white&logo=Posit&logoColor=teal'>
 
 Serverless. Runs entirely in your browser.
 
@@ -154,7 +154,7 @@ tibble::tribble(
 
 ### Not hosted
 
-<img src='https://img.shields.io/badge/Shiny-not_hosted-447099?style=flat&labelColor=white&logo=Posit&logoColor=447099'>
+<img src='https://img.shields.io/badge/Shiny-not_hosted-teal?style=flat&labelColor=white&logo=Posit&logoColor=teal'>
 
 You'll have to download and run them yourself.
 

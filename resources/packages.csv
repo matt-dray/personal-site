@@ -1,5 +1,5 @@
 Name,category,Description,source_url,site_url,blog_url,hex_url
-a11ytables,Useful,Generate best-practice stats spreadsheets for publication,https://github.com/best-practice-and-impact/a11ytables,,https://www.rostrum.blog/#category=a11ytables,
+aftables,Useful,Generate best-practice stats spreadsheets for publication (renamed from {a11ytables}),https://github.com/best-practice-and-impact/aftables,,https://www.rostrum.blog/#category=a11ytables,
 ActionSquirrel,Concept,A squirrel game in your R console made with {R6},https://github.com/matt-dray/ActionSquirrel,,https://www.rostrum.blog/posts/2021-10-03-squirrel/,
 altcheckr,Useful,Assess image alternative (alt) text on websites,https://github.com/matt-dray/altcheckr,https://matt-dray.github.io/altcheckr/,https://www.rostrum.blog/posts/2019-12-08-altcheckr/,
 backtick,Useful,Insert backtick structures with an RStudio Addin,https://github.com/matt-dray/backtick,,https://www.rostrum.blog/posts/2022-02-19-backtick/,
