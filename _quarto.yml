@@ -15,14 +15,12 @@ website:
         href: index.qmd
       - href: projects.qmd
       - href: talking.qmd
-      - text: "Blog›"
+      - text: "Blog"
         href: https://www.rostrum.blog
-      - text: "GitHub›"
+      - text: "GitHub"
         href: https://github.com/matt-dray/
-      - text: "Mastodon›"
-        href: https://fosstodon.org/@mattdray
     right:
-      - text: "..."
+      - text: "{{< fa bugs >}}"
         href: site-details.qmd
 
 format:
