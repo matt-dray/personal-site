@@ -228,11 +228,11 @@ tibble::tribble(
     enlink_fa("https://www.rostrum.blog/posts/2023-08-26-cheerio-blogdown/", "pencil")
   ),
   #
-  "faxcrayon.art", 
+  "Faxcrayon", 
   "A gallery of recreations/remixes/original art",
   "RMarkdown, {bs4cards}, GitHub Pages",
   paste(
-    enlink_fa("https://www.faxcrayon.art/", "globe"),
+    enlink_fa("https://matt-dray.github.io/faxcrayon/", "globe"),
     enlink_fa("https://www.github.com/matt-dray/faxcrayon/", "github"),
     enlink_fa("https://www.rostrum.blog/posts/2021-07-25-faxcrayon/", "pencil")
   ),

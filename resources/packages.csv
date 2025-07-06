@@ -14,6 +14,7 @@ defenestrate,Useful,Personal helpers wrapping {Microsoft365R},https://github.com
 dialga,Useful,Translate R to cron to English,https://github.com/matt-dray/dialga,,https://www.rostrum.blog/posts/2021-04-10-dialga/,
 emojiscape,Concept,Print a little emoji scene to your console,https://github.com/matt-dray/emojiscape,,https://www.rostrum.blog/posts/2021-06-26-emojiscape,
 gdstheme,Useful,"{xaringan} theme and template, (unofficial) Government Digital Service style",https://github.com/matt-dray/gdstheme,https://matt-dray.github.io/gdstheme/,https://www.rostrum.blog/posts/2019-05-24-xaringan-template/,
+gex,Useful,A dependency-light hex-logo builder,https://github.com/matt-dray/gex,,https://www.rostrum.blog/index.html#category=gex,
 ghdump,Useful,Download/clone all of a user's GitHub repositories for archiving purposes,https://github.com/matt-dray/ghdump,,https://www.rostrum.blog/posts/2020-06-14-ghdump/,
 gpx3d,Useful,Make an interactive 3D chart of your workout route from a GPX file,https://github.com/matt-dray/gpx3d,https://matt-dray.github.io/gpx3d/,https://www.rostrum.blog/index.html#category=gpx3d,
 hexbase,Useful,Make a very simple hex logo with no dependencies,https://github.com/matt-dray/hexbase,,https://www.rostrum.blog/index.html#category=hexbase,
