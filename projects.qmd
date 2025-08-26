@@ -25,20 +25,30 @@ Selected packages. All are hosted on GitHub. Many are [on my R-universe](https:/
 Made to serve a 'real' purpose. Other people could feasibly find them useful. Nothing grandiose. Alphabetical.
 
 ```{r}
-#| label: packages-useful
+#| label: packages-prep
 #| echo: false
 
 pkgs <- read.csv("resources/packages.csv")
 
-pkgs$Links <- paste(
+pkgs$links <- paste(
   lapply(pkgs$source_url, \(x) enlink_fa(x, "github")),
   lapply(pkgs$blog_url,   \(x) enlink_fa(x, "pencil"))
 )
 
-pkgs$Name <- paste0("{", pkgs$Name, "}")
+pkgs$name <- ifelse(
+  pkgs$language == "R", 
+  paste0("{", pkgs$name, "}"),
+  pkgs$name
+) 
 
+names(pkgs) <- names(pkgs) |> tools::toTitleCase()
+```
+
+```{r}
+#| label: r-packages-useful
+#| echo: false
 pkgs[
-  pkgs$category == "Useful",
+  pkgs$Language == "R" & pkgs$Category == "Useful",
   c("Name", "Description", "Links")
 ] |> 
   knitr::kable(row.names = FALSE)
@@ -49,10 +59,22 @@ pkgs[
 Experiments, games, hacks, memes and subversion. Alphabetical.
 
 ```{r}
-#| label: packages-concept
+#| label: r-packages-concept
 #| echo: false
 pkgs[
-  pkgs$category == "Concept",
+  pkgs$Language == "R" & pkgs$Category == "Concept",
+  c("Name", "Description", "Links")
+] |> 
+  knitr::kable(row.names = FALSE)
+```
+
+## Python tools
+
+```{r}
+#| label: py-packages
+#| echo: false
+pkgs[
+  pkgs$Language == "Python",
   c("Name", "Description", "Links")
 ] |> 
   knitr::kable(row.names = FALSE)
