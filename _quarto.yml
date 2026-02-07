@@ -29,3 +29,6 @@ format:
     css: styles.css
     grid:
       body-width: 900px
+
+filters:
+  - auto-dark
