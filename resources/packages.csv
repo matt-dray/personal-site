@@ -41,4 +41,6 @@ R,tidyquiz,Concept,A {tidyverse} quiz via {learnr} hacking,https://github.com/ma
 R,tilebased,Concept,Move a sprite around a procedurally-generated map inside an R graphics window,https://github.com/matt-dray/tilebased,,https://www.rostrum.blog/posts/2024-07-14-tilebased/,
 R,trapinch,Useful,Get data from the PokéAPI service,https://github.com/matt-dray/trapinch,,https://www.rostrum.blog/posts/2023-02-02-trapinch/,
 R,wordup,Useful,Convert Word tables to Govspeak Markdown,https://github.com/matt-dray/wordup,,https://www.rostrum.blog/index.html#category=wordup,
-Python,jot,,Minimal opinionated CLI tool to jot timestamped thoughts,https://github.com/matt-dray/jot,,https://www.rostrum.blog/posts/2025-08-25-jot/,
+Python,jot,Useful,Minimal opinionated CLI tool to jot timestamped thoughts,https://github.com/matt-dray/jot,,https://www.rostrum.blog/index.html#category=jot,
+Python,pet,Concept,A persistent cyberpet that lives on the command line,https://github.com/matt-dray/pet,,https://www.rostrum.blog/posts/2025-10-30-pet/,
+Python,tyle,Concept,A small interactive toy roguelike-like experience,https://github.com/matt-dray/tyle,,https://www.rostrum.blog/posts/2026-02-01-tyle/,
