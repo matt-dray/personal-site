@@ -9,7 +9,7 @@ website:
   twitter-card: true
   search: false
   navbar:
-    logo: resources/pfp-pixel.ico
+    # logo: resources/pfp-pixel.ico
     left:
       - text: Bio
         href: index.qmd
